@@ -1,7 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class OtherTask345 {
+public class OtherTasks345{
 
     public static void main(String[] args) {
         int length = Integer.valueOf(args[0]);
@@ -35,21 +35,24 @@ public class OtherTask345 {
         Scanner sc = new Scanner(System.in);
         int amount = sc.nextInt();
         int sum = 0;
+        int multip = 1;
         int[] arr = new int[amount];
 
         System.out.println("Enter the elements of array");
         for (int i = 0; i <= arr.length - 1; i++) {
             arr[i] = sc.nextInt();
             sum += arr[i];
+            multip*= arr[i];
         }
         System.out.println("Sum :" + sum);
+        System.out.println("Multiplication :"+ multip);
     }
 
-    public static void task5(){
-        System.out.println("Enter the  number from 1 to 12");
+    public static void task5() {
+        System.out.println("Enter the number from 1 to 12");
         Scanner sc = new Scanner(System.in);
         int number = sc.nextInt();
-        switch (number){
+        switch (number) {
             case 1:
                 System.out.println("January");
                 break;
@@ -89,7 +92,6 @@ public class OtherTask345 {
             default:
                 System.out.println("Please, enter the number between 1 and 12");
         }
-
 
 
     }
